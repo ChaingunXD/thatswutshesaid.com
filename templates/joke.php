@@ -3,5 +3,5 @@
 </div>
 
 <div id="more">
-  <a href="/">Give me another, daddy</a>
+  <a href="/">Again!</a>
 </div>
