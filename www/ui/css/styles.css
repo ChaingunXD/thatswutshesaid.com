@@ -1,0 +1,36 @@
+body {
+  background-position: center top;
+}
+
+.joke {
+  margin-top: 100px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  font-style: italic;
+  font-weight: normal;
+  text-shadow: -3px 3px 2px rgba(0,0,0,.24);
+  color: #fff;
+}
+
+.tagline {
+  color: rgb(255,255,255);
+  color: rgba(255,255,255,.25);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 100px;
+  text-align: center;
+  font-style: italic;
+  text-shadow: -2px 2px 0 2px rgba(0,0,0,.24);  
+}
+
+.more {
+  text-align: center;
+}
+  .more a {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #666;
+    background: white;
+    padding: 10px;
+    border-radius: 30px 30px 30px 30px;
+    text-decoration: none;
+    cursor: pointer;
+  }
