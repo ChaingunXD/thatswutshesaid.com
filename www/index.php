@@ -29,6 +29,8 @@
   $jokes = file_get_contents("jokes.json");
   $jokes = json_decode($jokes, true);
 
+  $permalink = 'http://' . $current_domain . '/' . $joke_id . '/';
+
   ob_start();
   if(!$jokes || !count($jokes)) {
     include('../templates/404.php');

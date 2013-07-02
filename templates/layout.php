@@ -1,17 +1,15 @@
 <!doctype html>
-<html>
+<html prefix="og: http://ogp.me/ns#">
   <head>
     <?php if(isset($joke)): ?>
       <title><?php echo htmlspecialchars($joke['title']); ?> - That's What <?php echo ($current_gender === 'f') ? 'She' : 'He'; ?> Said!</title>
+      <meta property="og:title" content="<?php echo htmlspecialchars($joke['title']); ?>">
+      <meta property="og:url" content="<?php echo $permalink; ?>">
     <?php else: ?>
       <title>That's What <?php echo ($current_gender === 'f') ? 'She' : 'He'; ?> Said! - Only the best <?php echo ($current_gender === 'f') ? 'TWSS' : 'TWHS'; ?> jokes on the internet.</title>
+      <meta property="og:title" content="That's What <?php echo ($current_gender === 'f') ? 'She' : 'He'; ?> Said!">
     <?php endif; ?>
-    <?php
-    if(isset($og_content)) {
-      echo $og_content;
-    }
-    ?>
-
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="/ui/css/styles.css">
     <style type="text/css">
       body {
