@@ -11,4 +11,11 @@ install() {
   sh $DIR/init/scripts/dotfiles.sh
 }
 
+postinstall() {
+  cp /var/www/vagrant/conf/default /etc/apache2/sites-available/
+  cp /var/www/vagrant/conf/apache2.conf /etc/apache2/
+  /etc/init.d/apache2 restart
+}
+
 install
+postinstall

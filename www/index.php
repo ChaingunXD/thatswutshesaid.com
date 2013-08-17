@@ -6,7 +6,7 @@
     'm' => 'thatswuthesaid.com'
   );
 
-  if(isset($_SERVER['ENV']) && $_SERVER['ENV'] === 'development') {
+  if(isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], 'dev') !== FALSE) {
     $domains = array(
       'f' => 'dev.thatswutshesaid.com',
       'm' => 'dev.thatswuthesaid.com'
